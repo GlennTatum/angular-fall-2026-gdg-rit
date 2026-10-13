@@ -32,4 +32,6 @@ docker exec -it angular /bin/bash
 npx ng --help
 
 # example: npx ng generate component DemoComponent
+
+# example: npx ng generate service DemoNasaImage --injectable --flat=false
 ```

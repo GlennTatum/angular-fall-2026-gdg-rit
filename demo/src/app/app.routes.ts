@@ -8,6 +8,7 @@ import { DemoInputParent } from './demo-input-parent/demo-input-parent';
 import { DemoOutput } from './demo-output/demo-output';
 import { DemoOutputParent } from './demo-output-parent/demo-output-parent';
 import { DemoForm } from './demo-form/demo-form';
+import { DemoCatComponent } from './demo-cat-component/demo-cat-component';
 
 export const routes: Routes = [
     {
@@ -41,5 +42,9 @@ export const routes: Routes = [
     {
         path: 'demo-form',
         component: DemoForm
+    },
+    {
+        path: 'demo-http',
+        component: DemoCatComponent
     }
 ];
