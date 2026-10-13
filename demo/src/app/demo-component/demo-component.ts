@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './demo-component.html',
 })
 export class DemoComponent {
-  title: string = "Hello rit!"
+  title: string = "rit!"
 }
