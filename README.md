@@ -24,5 +24,12 @@ docker run  -it --rm --user $UID -v .:/app -w /app angular-init:latest
 
 docker build . -t angular-app:latest
 
-docker run -it --rm -v ./demo/:/app/demo/ --user $UID -p 4200:4200 angular-app:latest
+docker run -it --rm -v ./demo/:/app/demo/ --name angular --user $UID -p 4200:4200 angular-app:latest
+
+docker exec -it angular /bin/bash
+
+# Use the angular cli
+npx ng --help
+
+# example: npx ng generate component DemoComponent
 ```
