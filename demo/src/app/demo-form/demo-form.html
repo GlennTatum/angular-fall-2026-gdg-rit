@@ -1,0 +1,17 @@
+<h3>Reactive Form (Form Group) Example</h3>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name" >
+
+    <label for="age">Age: </label>
+    <input id="age" type="number" formControlName="age" >
+
+    <button type="submit">Submit Form</button>
+</form>
+
+@if(isSubmitted) {
+    <h4>User Profile</h4>
+    <p>{{ profileName }}</p>
+    <p>{{ profileAge }}</p>
+}

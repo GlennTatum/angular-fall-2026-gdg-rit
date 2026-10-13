@@ -1,0 +1,13 @@
+<h3>Two Way Data Binding</h3>
+
+<input type="text" [(ngModel)]="textInput"  />
+
+<p>{{ textInput }}</p>
+
+<app-demo-two-way-child [(basket)]="items" ></app-demo-two-way-child>
+
+<ul>
+    @for(item of items; track items.length) {
+        {{ item }}
+    }
+</ul>
