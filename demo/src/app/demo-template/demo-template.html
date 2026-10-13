@@ -1,0 +1,26 @@
+<div ngNonBindable>
+    <div>
+        <p>
+            Here is an image URL binded to a src attribute. You can see that by using curly braces within regular elements we are able to bring variables forward. For example if we do {{ imgName | uppercase }} we will get an uppercase result. We can also do basic arithmetic and boolean evaluations.
+        </p>
+    </div>
+    <div>
+        <p>
+            But what if we need to use a variable within an html attribute? That is where one-way data binding or "Property Binding"
+            takes place. On the attribute property we wrap the target key with braces [] and then insert the component variables name on the right hand side.
+        </p>
+    </div>
+
+</div>
+
+<div>
+    <h3>Example</h3>
+</div>
+
+<p>{{ imgName | uppercase }}</p>
+<p>Is this image name greater than 2 characters? {{ imgName.length > 2 ? 'yes' : 'no' }}</p>
+<p>Is this image name greater than 3 characters? {{ imgName.length > 3 ? 'yes' : 'no' }}</p>
+<p>{{ 1 + 1 }}</p>
+
+
+<img [src]="imgURL" />
