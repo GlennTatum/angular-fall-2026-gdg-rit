@@ -22,6 +22,8 @@ docker run  -it --rm --user $UID -v .:/app -w /app angular-init:latest
 
 ```bash
 
+npm install .
+
 docker build . -t angular-app:latest
 
 docker run -it --rm -v ./demo/:/app/demo/ --name angular --user $UID -p 4200:4200 angular-app:latest

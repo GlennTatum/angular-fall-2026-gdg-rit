@@ -6,7 +6,7 @@ COPY . /app/
 
 WORKDIR /app/demo
 
-RUN npm install .
+RUN npm install -g @angular/cli
 
 EXPOSE 4200
 
